@@ -1,5 +1,11 @@
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
 html {
-    background-color: steelblue;
+    background: #193549;
     background-size: cover;
 }
 
@@ -13,6 +19,10 @@ body {
     font-weight: 100;
 }
 
+.h1 {
+    color: var(--base);
+}
+
 .controls {
     margin-bottom: 50px;
 }
@@ -21,3 +31,8 @@ input {
     width: 100px;
 }
 
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
